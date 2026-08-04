@@ -1,0 +1,10 @@
+{
+  "name": "Warung Salem — Beuteng wareg awak jagjag",
+  "short_name": "Warung Salem",
+  "description": "Warung makan favorit mahasiswa UMP & UHB Purwokerto. Dine In, Take Away, COD kampus.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#111111",
+  "theme_color": "#DC2626",
+  "icons": [{ "src": "assets/img/nasi-tutug-oncom-ayam.jpg", "sizes": "512x512", "type": "image/jpeg" }]
+}

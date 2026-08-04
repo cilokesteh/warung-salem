@@ -1,809 +1,493 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Warung Salem — Beuteng wareg awak jagjag. Warung makan dekat Kampus UMP & UHB Purwokerto. Dine In, Take Away, Pesanan & COD.">
-    <meta name="keywords" content="warung salem, makan purwokerto, warung dekat UMP, kuliner purwokerto, COD makanan kampus">
-    <meta property="og:title" content="Warung Salem — Beuteng Wareg Awak Jagjag">
-    <meta property="og:description" content="Warung makan favorit mahasiswa UMP & UHB. Dine In, Take Away, Pesanan & COD!">
-    <meta property="og:type" content="website">
-    <title>Warung Salem — Beuteng Wareg Awak Jagjag</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+<meta name="theme-color" content="#DC2626"/>
+<meta name="description" content="Warung Salem Purwokerto — Beuteng wareg awak jagjag. Warung makan favorit mahasiswa UMP & UHB. Dine In, Take Away, COD kampus. Nasi Tutug Oncom, Magelangan, Roti Bakar, Es — mulai 5rb. Buka 10.00-21.00 WIB."/>
+<meta name="keywords" content="warung salem purwokerto, kuliner purwokerto, warung makan dekat UMP, warung dekat UHB, COD makanan purwokerto, nasi tutug oncom purwokerto, magelangan purwokerto"/>
+<meta name="robots" content="index, follow, max-image-preview:large"/>
+<link rel="canonical" href="https://www.warungsalem.web.id/"/>
+<meta property="og:title" content="Warung Salem — Beuteng Wareg Awak Jagjag | Favorit Mahasiswa Purwokerto"/>
+<meta property="og:description" content="Makan enak porsi mantap harga mahasiswa. Dine In, Take Away, COD UMP & UHB. Best Seller: Nasi Tutug Oncom Ayam, Magelangan, Roti Bakar, Es Milo — mulai Rp 5.000 🔥"/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://www.warungsalem.web.id/"/>
+<meta property="og:image" content="https://www.warungsalem.web.id/assets/img/nasi-tutug-oncom-ayam.jpg"/>
+<meta property="og:locale" content="id_ID"/>
+<meta property="og:site_name" content="Warung Salem"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Warung Salem — Kuliner Favorit Mahasiswa Purwokerto"/>
+<meta name="twitter:description" content="Beuteng wareg awak jagjag — makan enak porsi mantap harga mahasiswa. COD UMP & UHB!"/>
+<meta name="twitter:image" content="https://www.warungsalem.web.id/assets/img/nasi-tutug-oncom-ayam.jpg"/>
+<title>Warung Salem — Beuteng Wareg Awak Jagjag | Kuliner Purwokerto Favorit Mahasiswa</title>
+<link rel="icon" type="image/jpeg" href="assets/img/nasi-tutug-oncom-ayam.jpg"/>
+<link rel="apple-touch-icon" href="assets/img/nasi-tutug-oncom-ayam.jpg"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet"/>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--red:#DC2626;--red-dark:#B91C1C;--red-soft:rgba(220,38,38,.08);--black:#111;--dark:#0f0f0f;--card:#181818;--card-hover:#222;--text:#fff;--muted:#9ca3af;--line:rgba(255,255,255,.07);--red-line:rgba(220,38,38,.18);--radius:14px;--wa:#25D366;--yellow:#FFCC00}
+html{scroll-behavior:smooth}
+body{font-family:'Poppins',sans-serif;background:var(--black);color:var(--text);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+.serif{font-family:'Playfair Display',serif}
+section{padding:68px 0}
+.sec-head{text-align:center;max-width:640px;margin:0 auto 38px}
+.sec-head .kicker{display:inline-flex;align-items:center;gap:8px;background:var(--red-soft);border:1px solid var(--red-line);color:#ff6b6b;padding:6px 14px;border-radius:100px;font-size:.76rem;font-weight:700;margin-bottom:12px}
+.sec-head h2{font-size:clamp(1.6rem,3.6vw,2.5rem);font-weight:800;line-height:1.1;margin-bottom:10px;letter-spacing:-.6px}
+.sec-head p{color:var(--muted);font-size:.94rem}
+/* NAV */
+nav{position:fixed;top:0;width:100%;z-index:1000;background:rgba(17,17,17,.88);backdrop-filter:blur(22px) saturate(1.2);-webkit-backdrop-filter:blur(22px);border-bottom:1px solid var(--line);padding:10px 0;transition:.3s}
+nav.scrolled{box-shadow:0 6px 32px rgba(0,0,0,.5);background:rgba(10,10,10,.94)}
+nav .wrap{display:flex;justify-content:space-between;align-items:center}
+.nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--text);font-weight:800;font-size:1.15rem;letter-spacing:-.3px}
+.nav-logo .umkm-badge{background:var(--red);color:#fff;font-size:.6rem;padding:3px 7px;border-radius:100px;font-weight:800;letter-spacing:.5px}
+.nav-logo .text-red{color:var(--red)}
+.nav-toggle{display:none;flex-direction:column;gap:5px;background:transparent;border:none;cursor:pointer;padding:6px}
+.nav-toggle span{width:24px;height:2px;background:var(--text);border-radius:2px;display:block;transition:.3s}
+.nav-toggle.active span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
+.nav-toggle.active span:nth-child(2){opacity:0}
+.nav-toggle.active span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
+.nav-menu{display:flex;gap:18px;align-items:center;list-style:none}
+.nav-menu a{color:var(--muted);text-decoration:none;font-size:.86rem;font-weight:600;transition:.2s;padding:4px 0;position:relative}
+.nav-menu a::after{content:'';position:absolute;bottom:-2px;left:0;width:0;height:2px;background:var(--red);transition:.25s}
+.nav-menu a:hover,.nav-menu a.active{color:var(--text)} .nav-menu a:hover::after,.nav-menu a.active::after{width:100%}
+.nav-btn{background:var(--wa)!important;color:#fff!important;padding:8px 18px!important;border-radius:100px!important;font-weight:700!important;font-size:.82rem!important;display:inline-flex;align-items:center;gap:7px;transition:.25s}
+.nav-btn::after{display:none!important} .nav-btn:hover{filter:brightness(1.08);transform:translateY(-1px)}
+@media(max-width:940px){.nav-toggle{display:flex}.nav-menu{position:fixed;top:60px;left:0;right:0;background:rgba(15,15,15,.98);backdrop-filter:blur(20px);flex-direction:column;align-items:stretch;padding:18px 20px 24px;border-bottom:1px solid var(--line);transform:translateY(-110%);opacity:0;transition:.32s}.nav-menu.open{transform:translateY(0);opacity:1}.nav-menu li{width:100%}.nav-menu a{display:flex;justify-content:space-between;padding:14px 14px;border-radius:10px}.nav-menu a:hover{background:rgba(255,255,255,.04)}}
+/* HERO */
+.hero{min-height:92vh;display:flex;align-items:center;position:relative;padding:110px 0 48px;background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.78)),url('assets/img/nasi-tutug-oncom-ayam.jpg') center/cover no-repeat}
+.hero-content{position:relative;z-index:1;text-align:center;max-width:780px;margin:0 auto}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.08);border:1px solid var(--line);padding:7px 16px;border-radius:100px;font-size:.79rem;font-weight:600;color:var(--muted);margin-bottom:18px;backdrop-filter:blur(8px)}
+.hero-title{font-size:clamp(2.1rem,6vw,3.8rem);font-weight:900;line-height:.98;margin-bottom:10px;letter-spacing:-1.2px}
+.hero-title .text-red{color:var(--red)}
+.hero-slogan{font-family:'Playfair Display',serif;font-size:clamp(1.1rem,2.5vw,1.45rem);font-style:italic;color:var(--yellow);margin-bottom:14px}
+.hero-desc{color:var(--muted);font-size:1.02rem;max-width:560px;margin:0 auto 26px;line-height:1.7}
+.hero-cta{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.hero-info{display:flex;gap:18px;justify-content:center;margin-top:22px;flex-wrap:wrap}
+.hero-info-item{display:flex;align-items:center;gap:8px;font-size:.84rem;color:var(--muted)}
+.hero-info-item i{color:var(--red)}
+.hero-trust{display:flex;gap:14px;justify-content:center;margin-top:18px;flex-wrap:wrap}
+.hero-trust span{font-size:.78rem;color:var(--muted);display:flex;align-items:center;gap:6px;background:rgba(255,255,255,.04);border:1px solid var(--line);padding:6px 12px;border-radius:100px}
+.hero-trust b{color:var(--text)}
+.btn{padding:12px 26px;border-radius:100px;font-weight:700;font-size:.88rem;text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:.25s;cursor:pointer;border:none}
+.btn-primary{background:var(--red);color:#fff}.btn-primary:hover{background:var(--red-dark);transform:translateY(-2px);box-shadow:0 8px 26px rgba(220,38,38,.35)}
+.btn-outline{background:rgba(255,255,255,.06);color:var(--text);border:1px solid var(--line)}.btn-outline:hover{border-color:var(--red-line);background:var(--red-soft)}
+.btn-wa{background:var(--wa);color:#fff}.btn-wa:hover{transform:translateY(-2px);box-shadow:0 8px 26px rgba(37,211,102,.35)}
+.btn-cta{background:linear-gradient(135deg,var(--red),#991b1b);color:#fff;padding:14px 28px;font-size:.95rem}.btn-cta:hover{transform:translateY(-2px);box-shadow:0 10px 32px rgba(220,38,38,.4)}
+/* BESTSELLER + MENU */
+.section-dark{background:var(--dark);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.menu-filter{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-bottom:22px}
+.menu-filter .filter-btn,.cat-btn{padding:8px 16px;border-radius:100px;border:1px solid var(--line);background:rgba(255,255,255,.04);color:var(--muted);font-weight:600;font-size:.82rem;cursor:pointer;transition:.2s}
+.menu-filter .filter-btn.active,.cat-btn.active,.filter-btn:hover,.cat-btn:hover{background:var(--red);color:#fff;border-color:var(--red)}
+.menu-search{max-width:420px;margin:0 auto 20px;position:relative}
+.menu-search input{width:100%;padding:12px 44px 12px 16px;border-radius:100px;border:1px solid var(--line);background:var(--card);color:var(--text);font-size:.88rem;outline:none;transition:.2s}
+.menu-search input:focus{border-color:var(--red-line);box-shadow:0 0 0 3px var(--red-soft)}
+.menu-search i{position:absolute;right:16px;top:50%;transform:translateY(-50%);color:var(--muted)}
+.menu-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px}
+.menu-card{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;transition:.25s;position:relative;display:flex;flex-direction:column}
+.menu-card:hover{border-color:var(--red-line);transform:translateY(-4px);box-shadow:0 12px 28px rgba(0,0,0,.35);background:var(--card-hover)}
+.menu-img{position:relative;aspect-ratio:1/0.78;overflow:hidden;background:#1a1a1a}
+.menu-img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s}
+.menu-card:hover .menu-img img{transform:scale(1.07)}
+.menu-img-placeholder{width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:var(--dark);color:var(--muted);font-size:2rem}
+.menu-badge{position:absolute;top:10px;left:10px;background:var(--red);color:#fff;padding:4px 10px;border-radius:100px;font-size:.7rem;font-weight:700;z-index:2}
+.menu-badge.hot{background:#f59e0b}
+.menu-badge.new{background:var(--wa)}
+.menu-info{padding:12px 14px 12px;display:flex;flex-direction:column;flex:1}
+.menu-info h3{font-size:.96rem;font-weight:700;line-height:1.25;margin-bottom:4px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.menu-info p{color:var(--muted);font-size:.8rem;line-height:1.5;margin-bottom:10px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;flex:1}
+.menu-bottom{display:flex;justify-content:space-between;align-items:center;margin-top:auto}
+.menu-price{font-weight:800;color:var(--red);font-size:.95rem}
+.menu-order{width:34px;height:34px;border-radius:50%;background:var(--wa);color:#fff;display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:.9rem;transition:.2s}
+.menu-order:hover{transform:scale(1.08);box-shadow:0 4px 14px rgba(37,211,102,.4)}
+.menu-add{padding:7px 14px;border-radius:100px;border:1px solid var(--line);background:rgba(255,255,255,.06);color:var(--text);font-size:.78rem;font-weight:700;cursor:pointer;transition:.2s;display:flex;align-items:center;gap:6px}
+.menu-add:hover{background:var(--red);border-color:var(--red);color:#fff}
+/* SERVICE + TESTI + LOKASI */
+.service-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.service-card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;transition:.25s;text-align:center}
+.service-card:hover{border-color:var(--red-line);transform:translateY(-3px)}
+.service-card i{font-size:1.7rem;color:var(--red);margin-bottom:10px;display:block}
+.service-card h3{font-size:1rem;font-weight:700;margin-bottom:6px}
+.service-card p{color:var(--muted);font-size:.84rem;line-height:1.6}
+.testi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.testi-card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;transition:.25s}
+.testi-card:hover{border-color:var(--red-line);transform:translateY(-2px)}
+.testi-stars{color:var(--yellow);font-size:.85rem;margin-bottom:8px}
+.testi-text{color:var(--muted);font-size:.88rem;line-height:1.6;margin-bottom:12px;font-style:italic}
+.testi-author{display:flex;gap:10px;align-items:center}
+.testi-avatar{width:36px;height:36px;border-radius:50%;background:var(--red);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.85rem}
+.testi-author strong{font-size:.9rem;display:block} .testi-author span{font-size:.78rem;color:var(--muted)}
+.location-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:22px;align-items:start}
+.location-info{display:flex;flex-direction:column;gap:14px}
+.location-item{display:flex;gap:12px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px}
+.location-icon{width:38px;height:38px;border-radius:10px;background:var(--red-soft);border:1px solid var(--red-line);color:var(--red);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.location-item h4{font-size:.9rem;font-weight:700;margin-bottom:2px} .location-item p,.location-item a{font-size:.86rem;color:var(--muted);text-decoration:none;line-height:1.5}
+.location-item a:hover{color:var(--red)}
+.location-map{border-radius:14px;overflow:hidden;border:1px solid var(--red-line);box-shadow:0 8px 32px rgba(0,0,0,.4)}
+.location-map iframe{width:100%;height:380px;border:0;display:block}
+@media(max-width:860px){.location-grid{grid-template-columns:1fr}.menu-grid{grid-template-columns:repeat(auto-fill,minmax(160px,1fr))}}
+/* FAQ */
+.faq-grid{max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:10px}
+.faq{border:1px solid var(--line);border-radius:12px;background:var(--card);overflow:hidden;transition:.2s}
+.faq.open{border-color:var(--red-line)}
+.faq-q{width:100%;text-align:left;background:transparent;border:none;color:var(--text);padding:15px 18px;font-weight:700;font-size:.9rem;display:flex;justify-content:space-between;align-items:center;cursor:pointer;gap:12px}
+.faq-q span:last-child{color:var(--red);transition:.25s;font-size:1rem}.faq.open .faq-q span:last-child{transform:rotate(45deg)}
+.faq-a{padding:0 18px 14px;color:var(--muted);font-size:.86rem;line-height:1.7;display:none}.faq.open .faq-a{display:block}
+/* CTA */
+.cta-section{background:linear-gradient(135deg,#1a0a0a,var(--dark));border-top:1px solid var(--red-line);border-bottom:1px solid var(--line);padding:48px 0;text-align:center}
+.cta-content h2{font-size:clamp(1.5rem,3.2vw,2.2rem);font-weight:800;margin-bottom:10px}
+.cta-content p{color:var(--muted);margin-bottom:18px}
+/* CART DRAWER — Premium 1.5jt feature */
+.cart-btn{position:relative}
+.cart-badge{position:absolute;top:-6px;right:-8px;background:var(--red);color:#fff;font-size:.68rem;font-weight:800;min-width:18px;height:18px;border-radius:100px;display:flex;align-items:center;justify-content:center;padding:0 4px;border:2px solid var(--black)}
+.cart-drawer{position:fixed;inset:0;z-index:1100;display:none}
+.cart-drawer.open{display:block}
+.cart-backdrop{position:absolute;inset:0;background:rgba(0,0,0,.6);backdrop-filter:blur(6px)}
+.cart-panel{position:absolute;top:0;right:0;width:94%;max-width:400px;height:100%;background:#161616;border-left:1px solid var(--line);display:flex;flex-direction:column;animation:slideIn .3s ease}
+@keyframes slideIn{from{transform:translateX(100%)}to{transform:translateX(0)}}
+.cart-head{display:flex;justify-content:space-between;align-items:center;padding:18px 20px;border-bottom:1px solid var(--line)}
+.cart-head h3{font-weight:800}
+.cart-close{width:34px;height:34px;border-radius:10px;border:1px solid var(--line);background:rgba(255,255,255,.06);color:var(--muted);cursor:pointer}
+.cart-body{flex:1;overflow-y:auto;padding:14px;display:flex;flex-direction:column;gap:10px}
+.cart-empty{text-align:center;padding:40px 20px;color:var(--muted)}
+.cart-empty i{font-size:2.2rem;margin-bottom:12px;display:block}
+.cart-item{display:flex;gap:12px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px}
+.cart-item img{width:50px;height:50px;border-radius:10px;object-fit:cover;flex-shrink:0;background:#222}
+.cart-item h4{font-size:.88rem;font-weight:700;line-height:1.2}
+.cart-item small{color:var(--muted);font-size:.78rem}
+.cart-qty{display:flex;align-items:center;gap:8px;margin-top:6px}
+.cart-qty button{width:26px;height:26px;border-radius:8px;border:1px solid var(--line);background:rgba(255,255,255,.06);color:var(--text);cursor:pointer}
+.cart-foot{padding:16px 20px;border-top:1px solid var(--line);background:rgba(0,0,0,.3)}
+.cart-total{display:flex;justify-content:space-between;font-weight:800;margin-bottom:12px}
+.cart-wa{width:100%;padding:13px;border-radius:100px;background:var(--wa);color:#fff;border:none;font-weight:800;font-size:.92rem;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px}
+/* FOOTER + FLOAT + STICKY */
+.footer{background:var(--dark);border-top:1px solid var(--line);padding:40px 0 18px}
+.footer-grid{display:grid;grid-template-columns:1.2fr .8fr .8fr .8fr;gap:22px}
+.footer-brand h3{font-weight:800;margin-bottom:6px}.footer-desc{color:var(--muted);font-size:.85rem;line-height:1.6}
+.footer-links h4,.footer-contact h4,.footer-payment h4{font-size:.9rem;font-weight:700;margin-bottom:10px}
+.footer-links ul{list-style:none;display:flex;flex-direction:column;gap:8px}
+.footer-links a,.footer-contact a{color:var(--muted);text-decoration:none;font-size:.84rem;transition:.2s}.footer-links a:hover,.footer-contact a:hover{color:var(--red)}
+.footer-contact p{margin-bottom:8px;display:flex;gap:8px;align-items:center}
+.pay-badge{display:inline-flex;align-items:center;gap:6px;background:var(--card);border:1px solid var(--line);padding:6px 12px;border-radius:100px;font-size:.78rem;font-weight:600;color:var(--muted);margin:4px}
+.footer-bottom{margin-top:22px;padding-top:16px;border-top:1px solid var(--line);text-align:center;color:rgba(255,255,255,.32);font-size:.72rem}
+@media(max-width:860px){.footer-grid{grid-template-columns:1fr 1fr}.footer-brand{grid-column:span 2}}
+.wa-float{position:fixed;bottom:22px;right:18px;width:54px;height:54px;background:var(--wa);border-radius:50%;display:flex;align-items:center;justify-content:center;z-index:999;box-shadow:0 4px 20px rgba(37,211,102,.4);animation:pulse 2s infinite;transition:.25s;text-decoration:none;color:#fff;font-size:1.4rem}
+.wa-float:hover{transform:scale(1.1)}@keyframes pulse{0%,100%{box-shadow:0 4px 20px rgba(37,211,102,.4)}50%{box-shadow:0 4px 28px rgba(37,211,102,.65)}}
+.back-top{position:fixed;bottom:22px;right:82px;width:42px;height:42px;background:var(--card);border:1px solid var(--line);border-radius:50%;display:none;align-items:center;justify-content:center;color:var(--muted);font-size:16px;cursor:pointer;z-index:998;transition:.25s}
+.back-top:hover{border-color:var(--red-line);color:var(--red);background:var(--red-soft)}.back-top.visible{display:flex}
+.sticky-cta{position:fixed;bottom:0;left:0;right:0;z-index:997;background:rgba(15,15,15,.95);backdrop-filter:blur(20px);border-top:1px solid var(--red-line);padding:10px 14px;display:flex;gap:10px;align-items:center;justify-content:space-between;transform:translateY(110%);transition:.35s}
+.sticky-cta.show{transform:translateY(0)} .sticky-cta .left{display:flex;align-items:center;gap:10px;min-width:0} .sticky-cta .left img{width:36px;height:36px;border-radius:8px;flex-shrink:0} .sticky-cta .left b{font-size:.84rem;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis} .sticky-cta .left small{font-size:.7rem;color:var(--muted);display:block}
+.reveal{opacity:0;transform:translateY(20px);transition:.5s}.reveal.show{opacity:1;transform:translateY(0)}
+@media(max-width:520px){.wrap{padding:0 16px}section{padding:52px 0}.hero{min-height:auto;padding:96px 0 40px}.menu-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.sticky-cta{padding-bottom:calc(10px + env(safe-area-inset-bottom))}}
+</style>
 </head>
 <body>
 
-<!-- ═══ NAVBAR ═══ -->
-<nav class="navbar" id="navbar">
-    <div class="container nav-container">
-        <a href="#beranda" class="nav-logo">
-            <span class="umkm-badge">UMKM</span>
-            <span class="logo-text">Warung <span class="text-red">Salem</span></span>
-        </a>
-        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
-            <span></span><span></span><span></span>
-        </button>
-        <ul class="nav-menu" id="navMenu">
-            <li><a href="#beranda" class="nav-link active">Beranda</a></li>
-            <li><a href="#bestseller" class="nav-link">Best Seller</a></li>
-            <li><a href="#menu" class="nav-link">Menu</a></li>
-            <li><a href="#layanan" class="nav-link">Layanan</a></li>
-            <li><a href="#testimoni" class="nav-link">Testimoni</a></li>
-            <li><a href="#lokasi" class="nav-link">Lokasi</a></li>
-            <li><a href="https://wa.me/6282325555586" class="nav-btn" target="_blank"><i class="fab fa-whatsapp"></i> Pesan Sekarang</a></li>
-        </ul>
-    </div>
-</nav>
+<nav id="navbar"><div class="wrap">
+<a href="#" class="nav-logo" id="logoHome"><span class="umkm-badge">UMKM</span> Warung <span class="text-red">Salem</span></a>
+<button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+<ul class="nav-menu" id="navMenu">
+<li><a href="#beranda" class="nav-link active">Beranda</a></li>
+<li><a href="#bestseller" class="nav-link">Best Seller</a></li>
+<li><a href="#menu" class="nav-link">Menu <span id="menuCount" style="background:var(--red);color:#fff;font-size:.65rem;padding:1px 6px;border-radius:100px;margin-left:4px">29</span></a></li>
+<li><a href="#layanan" class="nav-link">Layanan</a></li>
+<li><a href="#faq" class="nav-link">FAQ</a></li>
+<li><a href="#lokasi" class="nav-link">Lokasi</a></li>
+<li><a href="https://wa.me/6282325555586?text=Halo%20Warung%20Salem%2C%20mau%20order..." class="nav-btn" target="_blank"><i class="fab fa-whatsapp"></i> Pesan</a></li>
+<li><button class="cart-btn nav-btn" id="cartBtn" style="background:var(--card)!important;border:1px solid var(--line);color:var(--text)!important"><i class="fas fa-shopping-cart"></i> <span class="cart-badge" id="cartBadge" style="display:none">0</span> Keranjang</button></li>
+</ul>
+</div></nav>
 
-<!-- ═══ HERO ═══ -->
 <section class="hero" id="beranda">
-    <div class="hero-overlay"></div>
-    <div class="container hero-content">
-        <div class="hero-badge">🔥 Warung Favorit Mahasiswa UMP & UHB</div>
-        <h1 class="hero-title">
-            Warung <span class="text-red">Salem</span>
-        </h1>
-        <p class="hero-slogan">"Beuteng wareg awak jagjag"</p>
-        <p class="hero-desc">Makan enak, porsi mantap, harga mahasiswa. Tersedia Dine In, Take Away, Pesanan & COD area kampus!</p>
-        <div class="hero-cta">
-            <a href="#menu" class="btn btn-primary"><i class="fas fa-utensils"></i> Lihat Menu</a>
-            <a href="https://wa.me/6282325555586?text=Halo%20Warung%20Salem%2C%20saya%20mau%20pesan" class="btn btn-outline" target="_blank"><i class="fab fa-whatsapp"></i> Order via WA</a>
-        </div>
-        <div class="hero-info">
-            <div class="hero-info-item">
-                <i class="fas fa-clock"></i>
-                <span>10.00 - 21.00 WIB</span>
-            </div>
-            <div class="hero-info-item">
-                <i class="fas fa-map-marker-alt"></i>
-                <span>Belakang Kampus UMP</span>
-            </div>
-        </div>
-    </div>
-    <div class="hero-scroll">
-        <a href="#menu"><i class="fas fa-chevron-down"></i></a>
-    </div>
+<div class="wrap"><div class="hero-content">
+<div class="hero-badge">🔥 Favorit Mahasiswa UMP & UHB · Buka 10.00-21.00</div>
+<h1 class="hero-title">Warung <span class="text-red">Salem</span></h1>
+<p class="hero-slogan">"Beuteng wareg awak jagjag"</p>
+<p class="hero-desc">Makan enak, porsi mantap, harga mahasiswa — <b style="color:#fff">mulai Rp 5.000</b>. Dine In, Take Away, Pesanan & COD area kampus Purwokerto!</p>
+<div class="hero-cta">
+<a href="#menu" class="btn btn-primary"><i class="fas fa-utensils"></i> Lihat Menu (29)</a>
+<a href="https://wa.me/6282325555586?text=Halo%20Warung%20Salem%2C%20mau%20order%20makanan..." class="btn btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Order WA</a>
+</div>
+<div class="hero-info">
+<div class="hero-info-item"><i class="fas fa-clock"></i> 10.00 - 21.00 WIB · Setiap Hari</div>
+<div class="hero-info-item"><i class="fas fa-map-marker-alt"></i> Belakang Kampus UMP, Purwokerto</div>
+</div>
+<div class="hero-trust">
+<span>⭐ <b>4.8</b>/5 dari 200+ pelanggan</span>
+<span>🛡️ Porsi mantap</span>
+<span>💳 QRIS / Transfer / Cash</span>
+</div>
+</div></div>
 </section>
 
-
-<!-- ═══ BEST SELLER ═══ -->
 <section class="section section-dark" id="bestseller">
-    <div class="container">
-        <div class="section-header">
-            <span class="section-badge">Paling Laris</span>
-            <h2 class="section-title">Menu <span class="text-red">Best Seller</span></h2>
-            <p class="section-desc">Pilihan favorit pelanggan setia Warung Salem yang wajib kamu coba!</p>
-        </div>
-        
-        <div class="menu-grid">
-            <div class="menu-card" data-category="makanan">
-                <div class="menu-img">
-                    <img src="assets/img/nasi-tutug-oncom-ayam.jpg" alt="Nasi Tutug Oncom Ayam" loading="lazy">
-                    <span class="menu-badge">Best Seller</span>
-                </div>
-                <div class="menu-info">
-                    <h3>Nasi Tutug Oncom Ayam</h3>
-                    <p>Nasi tutug oncom khas Sunda dengan ayam goreng</p>
-                    <div class="menu-bottom">
-                        <span class="menu-price">Rp 14.000</span>
-                        <a href="https://wa.me/6282325555586?text=Pesan%20Nasi%20Tutug%20Oncom%20Ayam" class="menu-order" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-card" data-category="makanan">
-                <div class="menu-img">
-                    <img src="assets/img/magelangan.jpg" alt="Magelangan" loading="lazy">
-                    <span class="menu-badge">Best Seller</span>
-                </div>
-                <div class="menu-info">
-                    <h3>Magelangan</h3>
-                    <p>Nasi goreng campur mie khas Magelang</p>
-                    <div class="menu-bottom">
-                        <span class="menu-price">Rp 12.000</span>
-                        <a href="https://wa.me/6282325555586?text=Pesan%20Magelangan" class="menu-order" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-card" data-category="snack">
-                <div class="menu-img">
-                    <img src="assets/img/roti-bakar-sandwich.jpg" alt="Roti Bakar Sandwich" loading="lazy">
-                    <span class="menu-badge">Best Seller</span>
-                </div>
-                <div class="menu-info">
-                    <h3>Roti Bakar Sandwich</h3>
-                    <p>Roti bakar isi lengkap ala sandwich (+3K extra keju)</p>
-                    <div class="menu-bottom">
-                        <span class="menu-price">Rp 11.000</span>
-                        <a href="https://wa.me/6282325555586?text=Pesan%20Roti%20Bakar%20Sandwich" class="menu-order" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-card" data-category="makanan">
-                <div class="menu-img">
-                    <img src="assets/img/mie-nyemek.jpg" alt="Mi Nyemek" loading="lazy">
-                    <span class="menu-badge">Best Seller</span>
-                </div>
-                <div class="menu-info">
-                    <h3>Mi Nyemek</h3>
-                    <p>Mie kuah kental bumbu Jawa nyemek</p>
-                    <div class="menu-bottom">
-                        <span class="menu-price">Rp 12.000</span>
-                        <a href="https://wa.me/6282325555586?text=Pesan%20Mi%20Nyemek" class="menu-order" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-card" data-category="minuman">
-                <div class="menu-img">
-                    <img src="assets/img/es-milo.jpg" alt="Es Milo" loading="lazy">
-                    <span class="menu-badge">Best Seller</span>
-                </div>
-                <div class="menu-info">
-                    <h3>Es Milo</h3>
-                    <p>Minuman coklat Milo dingin segar</p>
-                    <div class="menu-bottom">
-                        <span class="menu-price">Rp 5.000</span>
-                        <a href="https://wa.me/6282325555586?text=Pesan%20Es%20Milo" class="menu-order" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<div class="wrap">
+<div class="sec-head reveal"><span class="kicker">🔥 Paling Laris Minggu Ini</span><h2>Menu <span style="color:var(--red)">Best Seller</span></h2><p>Pilihan favorit pelanggan — wajib coba kalo pertama kali kesini!</p></div>
+<div class="menu-grid" id="bestGrid"></div>
+</div>
 </section>
-<!-- ═══ MENU / KATALOG ═══ -->
+
 <section class="section" id="menu">
-    <div class="container">
-        <div class="section-header">
-            <span class="section-badge">Menu Kami</span>
-            <h2 class="section-title">Pilihan <span class="text-red">Menu Favorit</span></h2>
-            <p class="section-desc">Semua menu dimasak fresh setiap hari dengan bahan berkualitas</p>
-        </div>
-
-        <!-- Category Filter -->
-        <div class="menu-filter">
-            <button class="filter-btn active" data-filter="all">Semua</button>
-            <button class="filter-btn" data-filter="makanan">🍛 Makanan</button>
-            <button class="filter-btn" data-filter="minuman">🥤 Minuman</button>
-            <button class="filter-btn" data-filter="snack">🍢 Snack</button>
-        </div>
-
-        <!-- Menu Grid -->
-        <div class="menu-grid" id="menuGrid">
-            <div class="menu-card" data-category="makanan">
-                <div class="menu-img">
-                    <div class="menu-img-placeholder"><i class="fas fa-utensils"></i></div>
-                    
-                </div>
-                <div class="menu-info">
-                    <h3>Nasi Kangkung Ayam Sambal Merah</h3>
-                    <p>Nasi kangkung + ayam + sambal merah nampol</p>
-                    <div class="menu-bottom">
-                        <span class="menu-price">Rp 15.000</span>
-                        <a href="https://wa.me/6282325555586?text=Pesan%20Nasi%20Kangkung%20Ayam%20Sambal%20Merah" class="menu-order" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-card" data-category="makanan">
-                <div class="menu-img">
-                    <img src="assets/img/nasi-tutug-oncom-telur.jpg" alt="Nasi Tutug Oncom Telur" loading="lazy">
-                    
-                </div>
-                <div class="menu-info">
-                    <h3>Nasi Tutug Oncom Telur</h3>
-                    <p>Nasi tutug oncom dengan telur goreng/dadar</p>
-                    <div class="menu-bottom">
-                        <span class="menu-price">Rp 11.000</span>
-                        <a href="https://wa.me/6282325555586?text=Pesan%20Nasi%20Tutug%20Oncom%20Telur" class="menu-order" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-card" data-category="makanan">
-                <div class="menu-img">
-                    <div class="menu-img-placeholder"><i class="fas fa-utensils"></i></div>
-                    
-                </div>
-                <div class="menu-info">
-                    <h3>Nasi Chicken BBQ</h3>
-                    <p>Ayam bakar BBQ sauce dengan nasi hangat</p>
-                    <div class="menu-bottom">
-                        <span class="menu-price">Rp 14.000</span>
-                        <a href="https://wa.me/6282325555586?text=Pesan%20Nasi%20Chicken%20BBQ" class="menu-order" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-card" data-category="makanan">
-                <div class="menu-img">
-                    <img src="assets/img/nasi-chicken-teriyaki.jpg" alt="Nasi Chicken Teriyaki" loading="lazy">
-                    
-                </div>
-                <div class="menu-info">
-                    <h3>Nasi Chicken Teriyaki</h3>
-                    <p>Ayam teriyaki manis gurih ala Jepang</p>
-                    <div class="menu-bottom">
-                        <span class="menu-price">Rp 14.000</span>
-                        <a href="https://wa.me/6282325555586?text=Pesan%20Nasi%20Chicken%20Teriyaki" class="menu-order" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-card" data-category="makanan">
-                <div class="menu-img">
-                    <div class="menu-img-placeholder"><i class="fas fa-utensils"></i></div>
-                    
-                </div>
-                <div class="menu-info">
-                    <h3>Nasi Ayam Asam Manis</h3>
-                    <p>Ayam crispy saus asam manis segar</p>
-                    <div class="menu-bottom">
-                        <span class="menu-price">Rp 14.000</span>
-                        <a href="https://wa.me/6282325555586?text=Pesan%20Nasi%20Ayam%20Asam%20Manis" class="menu-order" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-card" data-category="makanan">
-                <div class="menu-img">
-                    <img src="assets/img/nasi-ayam-penyet-cabe-ijo.jpg" alt="Nasi Ayam Penyet Cabe Ijo" loading="lazy">
-                    <span class="menu-badge hot">Pedas!</span>
-                </div>
-                <div class="menu-info">
-                    <h3>Nasi Ayam Penyet Cabe Ijo</h3>
-                    <p>Ayam penyet sambal cabe ijo khas</p>
-                    <div class="menu-bottom">
-                        <span class="menu-price">Rp 13.000</span>
-                        <a href="https://wa.me/6282325555586?text=Pesan%20Nasi%20Ayam%20Penyet%20Cabe%20Ijo" class="menu-order" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-card" data-category="makanan">
-                <div class="menu-img">
-                    <img src="assets/img/nasi-ayam-chilli-padi.jpg" alt="Nasi Ayam Chilli Padi" loading="lazy">
-                    <span class="menu-badge hot">Pedas!</span>
-                </div>
-                <div class="menu-info">
-                    <h3>Nasi Ayam Chilli Padi</h3>
-                    <p>Ayam goreng sambal chilli padi super pedas</p>
-                    <div class="menu-bottom">
-                        <span class="menu-price">Rp 13.000</span>
-                        <a href="https://wa.me/6282325555586?text=Pesan%20Nasi%20Ayam%20Chilli%20Padi" class="menu-order" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-card" data-category="makanan">
-                <div class="menu-img">
-                    <img src="assets/img/nasi-ayam-suwir.jpg" alt="Nasi Ayam Suwir" loading="lazy">
-                    
-                </div>
-                <div class="menu-info">
-                    <h3>Nasi Ayam Suwir</h3>
-                    <p>Ayam suwir bumbu meresap + nasi hangat</p>
-                    <div class="menu-bottom">
-                        <span class="menu-price">Rp 11.000</span>
-                        <a href="https://wa.me/6282325555586?text=Pesan%20Nasi%20Ayam%20Suwir" class="menu-order" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-card" data-category="makanan">
-                <div class="menu-img">
-                    <img src="assets/img/nasi-nugget-sambal-matah.jpg" alt="Nasi Nugget Sambal Matah" loading="lazy">
-                    
-                </div>
-                <div class="menu-info">
-                    <h3>Nasi Nugget Sambal Matah</h3>
-                    <p>Nugget crispy + sambal matah Bali segar</p>
-                    <div class="menu-bottom">
-                        <span class="menu-price">Rp 11.000</span>
-                        <a href="https://wa.me/6282325555586?text=Pesan%20Nasi%20Nugget%20Sambal%20Matah" class="menu-order" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-card" data-category="makanan">
-                <div class="menu-img">
-                    <img src="assets/img/nasi-goreng.jpg" alt="Nasi Goreng" loading="lazy">
-                    
-                </div>
-                <div class="menu-info">
-                    <h3>Nasi Goreng</h3>
-                    <p>Nasi goreng bumbu racikan khas Warung Salem</p>
-                    <div class="menu-bottom">
-                        <span class="menu-price">Rp 11.000</span>
-                        <a href="https://wa.me/6282325555586?text=Pesan%20Nasi%20Goreng" class="menu-order" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-card" data-category="makanan">
-                <div class="menu-img">
-                    <div class="menu-img-placeholder"><i class="fas fa-utensils"></i></div>
-                    
-                </div>
-                <div class="menu-info">
-                    <h3>Nasi Orak Arik</h3>
-                    <p>Nasi orak-arik telur sayur sederhana</p>
-                    <div class="menu-bottom">
-                        <span class="menu-price">Rp 10.000</span>
-                        <a href="https://wa.me/6282325555586?text=Pesan%20Nasi%20Orak%20Arik" class="menu-order" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-card" data-category="makanan">
-                <div class="menu-img">
-                    <div class="menu-img-placeholder"><i class="fas fa-utensils"></i></div>
-                    
-                </div>
-                <div class="menu-info">
-                    <h3>Nasi Omelet</h3>
-                    <p>Omelet telur tebal + nasi hangat</p>
-                    <div class="menu-bottom">
-                        <span class="menu-price">Rp 12.000</span>
-                        <a href="https://wa.me/6282325555586?text=Pesan%20Nasi%20Omelet" class="menu-order" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-card" data-category="makanan">
-                <div class="menu-img">
-                    <img src="assets/img/nasi-bejek-kulit-krispy.jpg" alt="Nasi Bejek Kulit Krispy" loading="lazy">
-                    
-                </div>
-                <div class="menu-info">
-                    <h3>Nasi Bejek Kulit Krispy</h3>
-                    <p>Nasi hangat dengan bejekan kulit ayam super krispy</p>
-                    <div class="menu-bottom">
-                        <span class="menu-price">Rp 12.000</span>
-                        <a href="https://wa.me/6282325555586?text=Pesan%20Nasi%20Bejek%20Kulit%20Krispy" class="menu-order" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-card" data-category="makanan">
-                <div class="menu-img">
-                    <img src="assets/img/mie-dok-dok.jpg" alt="Mie Dok-Dok" loading="lazy">
-                    <span class="menu-badge hot">Pedas!</span>
-                </div>
-                <div class="menu-info">
-                    <h3>Mie Dok-Dok</h3>
-                    <p>Mie goreng pedas khas gerobakan</p>
-                    <div class="menu-bottom">
-                        <span class="menu-price">Rp 12.000</span>
-                        <a href="https://wa.me/6282325555586?text=Pesan%20Mie%20Dok-Dok" class="menu-order" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-card" data-category="makanan">
-                <div class="menu-img">
-                    <img src="assets/img/mie-tek-tek.jpg" alt="Mie Tek Tek" loading="lazy">
-                    
-                </div>
-                <div class="menu-info">
-                    <h3>Mie Tek Tek</h3>
-                    <p>Mie goreng ala tek-tek abang gerobak</p>
-                    <div class="menu-bottom">
-                        <span class="menu-price">Rp 12.000</span>
-                        <a href="https://wa.me/6282325555586?text=Pesan%20Mie%20Tek%20Tek" class="menu-order" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-card" data-category="makanan">
-                <div class="menu-img">
-                    <img src="assets/img/mie-rebus-telur.jpg" alt="Mie Rebus Telur" loading="lazy">
-                    
-                </div>
-                <div class="menu-info">
-                    <h3>Mie Rebus Telur</h3>
-                    <p>Mie rebus kuah + telur rebus</p>
-                    <div class="menu-bottom">
-                        <span class="menu-price">Rp 10.000</span>
-                        <a href="https://wa.me/6282325555586?text=Pesan%20Mie%20Rebus%20Telur" class="menu-order" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-card" data-category="makanan">
-                <div class="menu-img">
-                    <img src="assets/img/mie-goreng-telur.jpg" alt="Mie Goreng Telur" loading="lazy">
-                    
-                </div>
-                <div class="menu-info">
-                    <h3>Mie Goreng Telur</h3>
-                    <p>Mie goreng klasik + telur ceplok</p>
-                    <div class="menu-bottom">
-                        <span class="menu-price">Rp 10.000</span>
-                        <a href="https://wa.me/6282325555586?text=Pesan%20Mie%20Goreng%20Telur" class="menu-order" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-card" data-category="makanan">
-                <div class="menu-img">
-                    <img src="assets/img/mie-setan.jpg" alt="Mie Setan" loading="lazy">
-                    <span class="menu-badge hot">Pedas!</span>
-                </div>
-                <div class="menu-info">
-                    <h3>Mie Setan</h3>
-                    <p>Mie super pedas level setan — berani coba?</p>
-                    <div class="menu-bottom">
-                        <span class="menu-price">Rp 11.000</span>
-                        <a href="https://wa.me/6282325555586?text=Pesan%20Mie%20Setan" class="menu-order" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-card" data-category="snack">
-                <div class="menu-img">
-                    <img src="assets/img/lumpia-beef.jpg" alt="Lumpia Beef" loading="lazy">
-                    
-                </div>
-                <div class="menu-info">
-                    <h3>Lumpia Beef</h3>
-                    <p>Lumpia isi daging sapi crispy</p>
-                    <div class="menu-bottom">
-                        <span class="menu-price">Rp 11.000</span>
-                        <a href="https://wa.me/6282325555586?text=Pesan%20Lumpia%20Beef" class="menu-order" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-card" data-category="snack">
-                <div class="menu-img">
-                    <img src="assets/img/roti-bakar-coklat.jpg" alt="Roti Bakar Coklat" loading="lazy">
-                    
-                </div>
-                <div class="menu-info">
-                    <h3>Roti Bakar Coklat</h3>
-                    <p>Roti bakar manis coklat crunchy (+3K extra keju)</p>
-                    <div class="menu-bottom">
-                        <span class="menu-price">Rp 11.000</span>
-                        <a href="https://wa.me/6282325555586?text=Pesan%20Roti%20Bakar%20Coklat" class="menu-order" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-card" data-category="snack">
-                <div class="menu-img">
-                    <div class="menu-img-placeholder"><i class="fas fa-utensils"></i></div>
-                    
-                </div>
-                <div class="menu-info">
-                    <h3>Roti Bakar Tiramisu Crunchy</h3>
-                    <p>Roti bakar manis rasa tiramisu (+3K extra keju)</p>
-                    <div class="menu-bottom">
-                        <span class="menu-price">Rp 11.000</span>
-                        <a href="https://wa.me/6282325555586?text=Pesan%20Roti%20Bakar%20Tiramisu%20Crunchy" class="menu-order" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-card" data-category="snack">
-                <div class="menu-img">
-                    <img src="assets/img/roti-bakar-matcha.jpg" alt="Roti Bakar Matcha" loading="lazy">
-                    
-                </div>
-                <div class="menu-info">
-                    <h3>Roti Bakar Matcha</h3>
-                    <p>Roti bakar manis rasa matcha (+3K extra keju)</p>
-                    <div class="menu-bottom">
-                        <span class="menu-price">Rp 11.000</span>
-                        <a href="https://wa.me/6282325555586?text=Pesan%20Roti%20Bakar%20Matcha" class="menu-order" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-card" data-category="snack">
-                <div class="menu-img">
-                    <img src="assets/img/roti-bakar-strawberry.jpg" alt="Roti Bakar Strawberry" loading="lazy">
-                    
-                </div>
-                <div class="menu-info">
-                    <h3>Roti Bakar Strawberry</h3>
-                    <p>Roti bakar manis selai strawberry (+3K extra keju)</p>
-                    <div class="menu-bottom">
-                        <span class="menu-price">Rp 11.000</span>
-                        <a href="https://wa.me/6282325555586?text=Pesan%20Roti%20Bakar%20Strawberry" class="menu-order" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-card" data-category="snack">
-                <div class="menu-img">
-                    <div class="menu-img-placeholder"><i class="fas fa-utensils"></i></div>
-                    
-                </div>
-                <div class="menu-info">
-                    <h3>Roti Bakar Blueberry</h3>
-                    <p>Roti bakar manis selai blueberry (+3K extra keju)</p>
-                    <div class="menu-bottom">
-                        <span class="menu-price">Rp 11.000</span>
-                        <a href="https://wa.me/6282325555586?text=Pesan%20Roti%20Bakar%20Blueberry" class="menu-order" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-card" data-category="minuman">
-                <div class="menu-img">
-                    <img src="assets/img/es-teh.jpg" alt="Es Teh" loading="lazy">
-                    
-                </div>
-                <div class="menu-info">
-                    <h3>Es Teh</h3>
-                    <p>Teh manis dingin segar pelepas dahaga</p>
-                    <div class="menu-bottom">
-                        <span class="menu-price">Rp 3.000</span>
-                        <a href="https://wa.me/6282325555586?text=Pesan%20Es%20Teh" class="menu-order" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-card" data-category="minuman">
-                <div class="menu-img">
-                    <img src="assets/img/es-nutrisari.jpg" alt="Es Nutrisari" loading="lazy">
-                    
-                </div>
-                <div class="menu-info">
-                    <h3>Es Nutrisari</h3>
-                    <p>Minuman buah segar Nutrisari dingin</p>
-                    <div class="menu-bottom">
-                        <span class="menu-price">Rp 4.000</span>
-                        <a href="https://wa.me/6282325555586?text=Pesan%20Es%20Nutrisari" class="menu-order" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-card" data-category="minuman">
-                <div class="menu-img">
-                    <div class="menu-img-placeholder"><i class="fas fa-utensils"></i></div>
-                    
-                </div>
-                <div class="menu-info">
-                    <h3>Es BengBeng</h3>
-                    <p>Minuman coklat BengBeng dingin creamy</p>
-                    <div class="menu-bottom">
-                        <span class="menu-price">Rp 5.000</span>
-                        <a href="https://wa.me/6282325555586?text=Pesan%20Es%20BengBeng" class="menu-order" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-card" data-category="minuman">
-                <div class="menu-img">
-                    <img src="assets/img/es-goodday.jpg" alt="Es Goodday" loading="lazy">
-                    
-                </div>
-                <div class="menu-info">
-                    <h3>Es Goodday</h3>
-                    <p>Kopi Goodday dingin manis segar</p>
-                    <div class="menu-bottom">
-                        <span class="menu-price">Rp 5.000</span>
-                        <a href="https://wa.me/6282325555586?text=Pesan%20Es%20Goodday" class="menu-order" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="menu-note">
-            <p><i class="fas fa-info-circle"></i> Menu & harga dapat berubah sewaktu-waktu. Untuk menu lengkap, hubungi kami via WhatsApp.</p>
-        </div>
-    </div>
+<div class="wrap">
+<div class="sec-head reveal"><span class="kicker">📜 Katalog Lengkap</span><h2>Pilihan <span style="color:var(--red)">Menu Favorit</span></h2><p>Semua dimasak fresh setiap hari — tap menu langsung masuk keranjang!</p></div>
+<div class="menu-search reveal"><input id="menuSearch" type="search" placeholder="Cari menu... contoh: ayam, mie, es, coklat" aria-label="Cari menu"/><i class="fas fa-search"></i></div>
+<div class="menu-filter reveal" id="menuFilter">
+<button class="filter-btn active" data-filter="all">Semua (29)</button>
+<button class="filter-btn" data-filter="makanan">🍛 Nasi (13)</button>
+<button class="filter-btn" data-filter="mie">🍜 Mie (5)</button>
+<button class="filter-btn" data-filter="snack">🍢 Snack & Roti (6)</button>
+<button class="filter-btn" data-filter="minuman">🥤 Minuman (5)</button>
+</div>
+<div class="menu-grid" id="menuGrid"></div>
+<div id="menuEmpty" style="display:none;text-align:center;padding:40px;color:var(--muted)"><i class="fas fa-search" style="font-size:2rem;margin-bottom:10px;display:block"></i>Tidak ada menu yang cocok. Coba keyword lain.</div>
+</div>
 </section>
-<!-- ═══ LAYANAN ═══ -->
+
 <section class="section section-dark" id="layanan">
-    <div class="container">
-        <div class="section-header">
-            <span class="section-badge">Layanan</span>
-            <h2 class="section-title">Cara <span class="text-red">Menikmati</span> Warung Salem</h2>
-            <p class="section-desc">Pilih cara yang paling nyaman buat kamu</p>
-        </div>
-
-        <div class="service-grid">
-            <div class="service-card">
-                <div class="service-icon"><i class="fas fa-chair"></i></div>
-                <h3>Dine In</h3>
-                <p>Makan di tempat dengan suasana warung yang nyaman. Tersedia meja untuk ngobrol bareng temen!</p>
-            </div>
-            <div class="service-card">
-                <div class="service-icon"><i class="fas fa-bag-shopping"></i></div>
-                <h3>Take Away</h3>
-                <p>Bungkus dan bawa pulang. Cocok buat yang sibuk kuliah tapi tetap mau makan enak.</p>
-            </div>
-            <div class="service-card">
-                <div class="service-icon"><i class="fas fa-clipboard-list"></i></div>
-                <h3>Terima Pesanan</h3>
-                <p>Pesan dalam jumlah banyak untuk acara, kumpul bareng, atau arisan. Hubungi via WA!</p>
-            </div>
-            <div class="service-card">
-                <div class="service-icon"><i class="fas fa-motorcycle"></i></div>
-                <h3>COD</h3>
-                <p>Antar langsung ke kampus UMP & UHB. Bayar di tempat. Minimum order berlaku.</p>
-            </div>
-        </div>
-    </div>
+<div class="wrap">
+<div class="sec-head reveal"><span class="kicker">🛎️ Layanan</span><h2>Cara <span style="color:var(--red)">Menikmati</span> Warung Salem</h2><p>Pilih yang paling enak buat kamu — semua area kampus tercover!</p></div>
+<div class="service-grid reveal">
+<div class="service-card"><i class="fas fa-chair"></i><h3>Dine In</h3><p>Makan langsung di warung — tempat nyaman, wifi, colokan. Cocok buat nugas.</p></div>
+<div class="service-card"><i class="fas fa-shopping-bag"></i><h3>Take Away</h3><p>Bungkus pulang — packaging rapi, sambal pisah, gak tumpah.</p></div>
+<div class="service-card"><i class="fas fa-motorcycle"></i><h3>COD Kampus</h3><p>Kampus UMP & UHB — chat WA, 15-25 menit sampai kos. Free ongkir area dekat.</p></div>
+<div class="service-card"><i class="fas fa-box"></i><h3>Pesanan Acara</h3><p>Pesanan banyak buat acara kampus / bukber — diskon 10% minimal 20 porsi.</p></div>
+</div>
+</div>
 </section>
 
-<!-- ═══ TESTIMONI ═══ -->
-<section class="section" id="testimoni">
-    <div class="container">
-        <div class="section-header">
-            <span class="section-badge">Testimoni</span>
-            <h2 class="section-title">Kata <span class="text-red">Mereka</span></h2>
-            <p class="section-desc">Apa kata pelanggan setia Warung Salem</p>
-        </div>
-
-        <div class="testi-grid">
-            <div class="testi-card">
-                <div class="testi-stars">
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                </div>
-                <p class="testi-text">"Porsinya banyak, harganya mahasiswa banget. Ayam gepreknya juara! Sambelnya nampol tapi nagih."</p>
-                <div class="testi-author">
-                    <div class="testi-avatar">A</div>
-                    <div>
-                        <strong>Andi</strong>
-                        <span>Mahasiswa UMP</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="testi-card">
-                <div class="testi-stars">
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                </div>
-                <p class="testi-text">"Tempatnya strategis, di belakang kampus. Cocok banget buat makan siang. COD-nya juga cepet!"</p>
-                <div class="testi-author">
-                    <div class="testi-avatar">S</div>
-                    <div>
-                        <strong>Sari</strong>
-                        <span>Mahasiswi UHB</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="testi-card">
-                <div class="testi-stars">
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                </div>
-                <p class="testi-text">"Langganan dari semester 1. Nasi tutug oncom ayamnya komplit dan murah. Mbak Ika-nya juga ramah banget."</p>
-                <div class="testi-author">
-                    <div class="testi-avatar">R</div>
-                    <div>
-                        <strong>Rizki</strong>
-                        <span>Mahasiswa UMP</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="testi-card">
-                <div class="testi-stars">
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                </div>
-                <p class="testi-text">"Nyobain Es Milo sama Roti Bakar Sandwich, sumpah enak banget. Roti bakarnya crunchy di luar, lumer di dalam!"</p>
-                <div class="testi-author">
-                    <div class="testi-avatar">D</div>
-                    <div>
-                        <strong>Dina</strong>
-                        <span>Mahasiswi UHB</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="testi-card">
-                <div class="testi-stars">
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                </div>
-                <p class="testi-text">"Pesan antar ke kosan UMP selalu on time. Nasi Ayam Chilli Padi beneran bikin melek. Mantap Warung Salem!"</p>
-                <div class="testi-author">
-                    <div class="testi-avatar">B</div>
-                    <div>
-                        <strong>Budi</strong>
-                        <span>Anak Kos</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<section class="section" id="faq">
+<div class="wrap">
+<div class="sec-head reveal"><span class="kicker">❓ Tanya Jawab</span><h2>Jawab <span style="color:var(--red)">Keraguan</span> Kamu</h2><p>Kalo masih ragu, baca ini — kalo udah laper langsung WA aja 😄</p></div>
+<div class="faq-grid reveal" id="faqGrid">
+<div class="faq open"><button class="faq-q"><span>Pedesnya bisa request level?</span><span>+</span></button><div class="faq-a">Bisa kak! Dari level 0 (gak pedes) sampai setan (nampol). Menu yang ada badge <b>Pedas!</b> default pedas, tapi bisa minta kurangin / tambahin cabenya. Chat WA aja sekalian pas order.</div></div>
+<div class="faq"><button class="faq-q"><span>Minimal pesan berapa? Ada ongkir?</span><span>+</span></button><div class="faq-a">Minimal 1 porsi aja bisa! COD area kampus UMP & UHB — free ongkir radius <1km, selebihnya 3k-5k doang. Dine In / Take Away gak ada ongkir.</div></div>
+<div class="faq"><button class="faq-q"><span>Jam berapa buka? Bisa pesan malem?</span><span>+</span></button><div class="faq-a">Buka setiap hari 10.00-21.00 WIB. Kalo mau pesan mepet jam tutup, chat dulu — kalo masih bisa kita layanin kok, maksimal sampai 21.00 proses masak terakhir.</div></div>
+<div class="faq"><button class="faq-q"><span>Pembayaran bisa QRIS / Transfer?</span><span>+</span></button><div class="faq-a">Bisa kak — Cash, Transfer BCA/BRI, QRIS. Kalo COD tetap bisa QRIS di tempat. Struk digital dikirim via WA kalo mau.</div></div>
+<div class="faq"><button class="faq-q"><span>Menu favorite kalo pertama kali kesini apa?</span><span>+</span></button><div class="faq-a">Best Seller kami: <b>Nasi Tutug Oncom Ayam (14k)</b>, <b>Magelangan (12k)</b>, <b>Mie Nyemek (12k)</b>, <b>Roti Bakar Sandwich (11k)</b>. Kalo minuman <b>Es Milo (5k)</b> enak pol. Combo: Nasi + Es = 15-19k aja.</div></div>
+<div class="faq"><button class="faq-q"><span>Bisa pesan buat acara kampus / banyak?</span><span>+</span></button><div class="faq-a">Bisa banget! Minimal 20 porsi dapat diskon 10% + free delivery area Purwokerto. Cocok buat rapat HIMA, bukber, lomba. Chat WA H-1 biar kami siapkan fresh.</div></div>
+</div>
+</div>
 </section>
 
-<!-- ═══ LOKASI ═══ -->
-<section class="section section-dark" id="lokasi">
-    <div class="container">
-        <div class="section-header">
-            <span class="section-badge">Lokasi</span>
-            <h2 class="section-title">Temukan <span class="text-red">Kami</span></h2>
-            <p class="section-desc">Gampang ditemukan, dekat kampus!</p>
-        </div>
-
-        <div class="location-grid">
-            <div class="location-info">
-                <div class="location-item">
-                    <div class="location-icon"><i class="fas fa-map-marker-alt"></i></div>
-                    <div>
-                        <h4>Alamat</h4>
-                        <p>Jl. Tegal Mulya, Gerbang Belakang Kampus UMP, Ledug, Kembaran, Purwokerto</p>
-                    </div>
-                </div>
-                <div class="location-item">
-                    <div class="location-icon"><i class="fas fa-clock"></i></div>
-                    <div>
-                        <h4>Jam Buka</h4>
-                        <p>Setiap Hari: 10.00 - 21.00 WIB</p>
-                    </div>
-                </div>
-                <div class="location-item">
-                    <div class="location-icon"><i class="fab fa-whatsapp"></i></div>
-                    <div>
-                        <h4>WhatsApp</h4>
-                        <p><a href="https://wa.me/6282325555586">0823-2555-5586</a></p>
-                    </div>
-                </div>
-                <div class="location-item">
-                    <div class="location-icon"><i class="fab fa-instagram"></i></div>
-                    <div>
-                        <h4>Instagram</h4>
-                        <p><a href="https://www.instagram.com/warung_salem" target="_blank">@warung_salem</a></p>
-                    </div>
-                </div>
-                <div class="location-item">
-                    <div class="location-icon"><i class="fas fa-truck"></i></div>
-                    <div>
-                        <h4>Area COD</h4>
-                        <p>Kampus UMP & UHB</p>
-                    </div>
-                </div>
-            </div>
-            <div class="location-map">
-                <iframe
-                    src="https://www.google.com/maps?q=-7.4153820,109.2728880&z=17&output=embed"
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"
-                    title=" Lokasi Warung Salem">
-                </iframe>
-            </div>
-        </div>
-    </div>
+<section class="section section-dark" id="testimoni">
+<div class="wrap">
+<div class="sec-head reveal"><span class="kicker">⭐ Testimoni</span><h2>Kata <span style="color:var(--red)">Mereka</span></h2><p>Review jujur dari pelanggan setia Warung Salem</p></div>
+<div class="testi-grid reveal">
+<div class="testi-card"><div class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p class="testi-text">"Nasi Tutug Oncom Ayam-nya juara! Porsi banyak, ayam gede, sambel nampol. Langganan sampe skripsi kelar!"</p><div class="testi-author"><div class="testi-avatar">A</div><div><strong>Anisa</strong><span>Mahasiswi UMP</span></div></div></div>
+<div class="testi-card"><div class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p class="testi-text">"Magelangan + Es Teh anget, combo 14k aja udah wareg. COD ke kos UMP cepet, abangnya ramah."</p><div class="testi-author"><div class="testi-avatar">R</div><div><strong>Rizki</strong><span>Anak Kos UMP</span></div></div></div>
+<div class="testi-card"><div class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p class="testi-text">"Nyobain Es Milo + Roti Bakar Sandwich, sumpah crunchy di luar lumer di dalam! Best buat nugas malem."</p><div class="testi-author"><div class="testi-avatar">D</div><div><strong>Dina</strong><span>Mahasiswi UHB</span></div></div></div>
+<div class="testi-card"><div class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p class="testi-text">"Pesan antar ke kosan selalu on time. Nasi Ayam Chilli Padi beneran bikin melek, pedesnya pas!"</p><div class="testi-author"><div class="testi-avatar">B</div><div><strong>Budi</strong><span>Rider & Mahasiswa</span></div></div></div>
+</div>
+</div>
 </section>
 
-<!-- ═══ CTA BANNER ═══ -->
+<section class="section" id="lokasi">
+<div class="wrap">
+<div class="sec-head reveal"><span class="kicker">📍 Lokasi</span><h2>Temukan <span style="color:var(--red)">Kami</span></h2><p>Gampang — belakang gerbang kampus UMP, samping indomaret masuk gang dikit!</p></div>
+<div class="location-grid reveal">
+<div class="location-info">
+<div class="location-item"><div class="location-icon"><i class="fas fa-map-marker-alt"></i></div><div><h4>Alamat Warung</h4><p>Jl. Tegal Mulya, Gerbang Belakang Kampus UMP, Ledug, Kembaran, Purwokerto, Banyumas 53182</p></div></div>
+<div class="location-item"><div class="location-icon"><i class="fas fa-clock"></i></div><div><h4>Jam Buka</h4><p>Setiap Hari: 10.00 - 21.00 WIB — Jumat tetap buka!</p></div></div>
+<div class="location-item"><div class="location-icon"><i class="fab fa-whatsapp"></i></div><div><h4>WhatsApp Order</h4><p><a href="https://wa.me/6282325555586?text=Halo%20Warung%20Salem%2C%20mau%20order..." target="_blank">0823-2555-5586 — balas < 3 menit</a></p></div></div>
+<div class="location-item"><div class="location-icon"><i class="fab fa-instagram"></i></div><div><h4>Instagram</h4><p><a href="https://www.instagram.com/warung_salem" target="_blank">@warung_salem — daily menu & promo</a></p></div></div>
+<div class="location-item"><div class="location-icon"><i class="fas fa-truck"></i></div><div><h4>Area COD & Ongkir</h4><p>Kampus UMP & UHB, Arcawinangun, Teluk, Ledug — Free <1km, 3-5k selebihnya</p></div></div>
+</div>
+<div class="location-map"><iframe src="https://www.google.com/maps?q=-7.4153820,109.2728880&z=17&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Lokasi Warung Salem Purwokerto"></iframe></div>
+</div>
+</div>
+</section>
+
 <section class="cta-section">
-    <div class="container">
-        <div class="cta-content">
-            <h2>Laper? Langsung Pesan Aja! 🔥</h2>
-            <p>Order via WhatsApp, tinggal pilih menu, bayar di tempat. Gampang!</p>
-            <a href="https://wa.me/6282325555586?text=Halo%20Warung%20Salem%2C%20saya%20mau%20pesan" class="btn btn-cta" target="_blank">
-                <i class="fab fa-whatsapp"></i> Pesan via WhatsApp
-            </a>
-        </div>
-    </div>
+<div class="wrap"><div class="cta-content reveal">
+<h2>Laper? Langsung Pesan Aja! 🔥</h2>
+<p>Tap menu di atas → masuk keranjang → checkout WA — pesanan otomatis ke WhatsApp. Gampang, 1 menit beres!</p>
+<div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:12px">
+<a href="#menu" class="btn btn-primary"><i class="fas fa-utensils"></i> Pilih Menu</a>
+<button onclick="openCart()" class="btn btn-wa cart-btn"><i class="fas fa-shopping-cart"></i> Keranjang (<span id="ctaCartCount">0</span>)</button>
+</div>
+</div></div>
 </section>
 
-<!-- ═══ FOOTER ═══ -->
 <footer class="footer">
-    <div class="container">
-        <div class="footer-grid">
-            <div class="footer-brand">
-                <h3><span class="umkm-badge">UMKM</span> Warung <span class="text-red">Salem</span></h3>
-                <p>"Beuteng wareg awak jagjag"</p>
-                <p class="footer-desc">Warung makan favorit mahasiswa Purwokerto. Porsi mantap, harga bersahabat!</p>
-            </div>
-            <div class="footer-links">
-                <h4>Menu</h4>
-                <ul>
-                    <li><a href="#beranda">Beranda</a></li>
-                    <li><a href="#menu">Menu</a></li>
-                    <li><a href="#layanan">Layanan</a></li>
-                    <li><a href="#testimoni">Testimoni</a></li>
-                    <li><a href="#lokasi">Lokasi</a></li>
-                </ul>
-            </div>
-            <div class="footer-contact">
-                <h4>Kontak</h4>
-                <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/6282325555586">0823-2555-5586</a></p>
-                <p><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/warung_salem" target="_blank">@warung_salem</a></p>
-                <p><i class="fas fa-map-marker-alt"></i> Belakang Kampus UMP, Purwokerto</p>
-            </div>
-            <div class="footer-payment">
-                <h4>Metode Pembayaran</h4>
-                <div class="payment-methods">
-                    <span class="pay-badge"><i class="fas fa-money-bill-wave"></i> Cash</span>
-                    <span class="pay-badge"><i class="fas fa-money-check-alt"></i> Transfer</span>
-                    <span class="pay-badge"><i class="fas fa-qrcode"></i> QRIS</span>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 Warung Salem. All rights reserved.</p>
-        </div>
-    </div>
+<div class="wrap">
+<div class="footer-grid">
+<div class="footer-brand"><h3><span class="umkm-badge" style="background:var(--red);color:#fff;font-size:.6rem;padding:3px 7px;border-radius:100px">UMKM</span> Warung <span style="color:var(--red)">Salem</span></h3><p style="font-family:'Playfair Display',serif;font-style:italic;margin:6px 0;color:var(--yellow)">"Beuteng wareg awak jagjag"</p><p class="footer-desc">Warung makan favorit mahasiswa Purwokerto — porsi mantap, harga bersahabat, COD kampus! Mulai Rp 5.000.</p></div>
+<div class="footer-links"><h4>Menu Cepat</h4><ul><li><a href="#beranda">Beranda</a></li><li><a href="#bestseller">Best Seller</a></li><li><a href="#menu">Katalog 29 Menu</a></li><li><a href="#faq">FAQ</a></li><li><a href="#lokasi">Lokasi</a></li></ul></div>
+<div class="footer-contact"><h4>Kontak</h4><p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/6282325555586">0823-2555-5586</a></p><p><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/warung_salem" target="_blank">@warung_salem</a></p><p><i class="fas fa-map-marker-alt"></i> Belakang UMP, Purwokerto</p><p><i class="fas fa-clock"></i> 10.00-21.00 WIB</p></div>
+<div class="footer-payment"><h4>Metode Bayar</h4><div class="payment-methods"><span class="pay-badge"><i class="fas fa-money-bill-wave"></i> Cash</span><span class="pay-badge"><i class="fas fa-university"></i> Transfer BCA/BRI</span><span class="pay-badge"><i class="fas fa-qrcode"></i> QRIS</span></div><p style="font-size:.76rem;color:var(--muted);margin-top:10px">COD bisa QRIS di tempat — struk digital via WA.</p></div>
+</div>
+<div class="footer-bottom"><p>© 2026 Warung Salem — UMKM Purwokerto. All rights reserved. · Dibuat dengan ❤️ oleh <a href="https://ciloktech.web.id" target="_blank" style="color:inherit;text-decoration:underline">CilokTech One-Man Studio</a> — Landing Premium 1.5jt</p></div>
+</div>
 </footer>
 
-<!-- WhatsApp Float Button -->
-<a href="https://wa.me/6282325555586?text=Halo%20Warung%20Salem%2C%20saya%20mau%20pesan" class="wa-float" target="_blank" aria-label="Chat WhatsApp">
-    <i class="fab fa-whatsapp"></i>
-</a>
+<!-- CART DRAWER -->
+<div class="cart-drawer" id="cartDrawer">
+<div class="cart-backdrop" onclick="closeCart()"></div>
+<div class="cart-panel">
+<div class="cart-head"><h3><i class="fas fa-shopping-cart"></i> Keranjang (<span id="cartCount">0</span>)</h3><button class="cart-close" onclick="closeCart()">✕</button></div>
+<div class="cart-body" id="cartBody"><div class="cart-empty"><i class="fas fa-shopping-basket"></i><p>Keranjang masih kosong</p><small>Tap menu untuk tambah pesanan — langsung checkout WA!</small></div></div>
+<div class="cart-foot" id="cartFoot" style="display:none">
+<div class="cart-total"><span>Total</span><span id="cartTotal">Rp 0</span></div>
+<button class="cart-wa" onclick="checkoutWA()"><i class="fab fa-whatsapp"></i> Checkout via WhatsApp</button>
+<button onclick="clearCart()" style="width:100%;margin-top:8px;background:transparent;border:1px solid var(--line);color:var(--muted);padding:10px;border-radius:100px;cursor:pointer;font-weight:600">Kosongkan Keranjang</button>
+</div>
+</div>
+</div>
 
-<script src="js/main.js"></script>
+<a href="https://wa.me/6282325555586?text=Halo%20Warung%20Salem%2C%20saya%20mau%20pesan..." class="wa-float" target="_blank" aria-label="WhatsApp Warung Salem"><i class="fab fa-whatsapp"></i></a>
+<button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+<div class="sticky-cta" id="stickyCta"><div class="left"><img src="assets/img/nasi-tutug-oncom-ayam.jpg" alt="Warung Salem"/><div><b id="stickyTitle">🍛 Laper? Tap menu + checkout WA</b><small id="stickySub">0 item · Rp 0 · COD UMP & UHB</small></div></div><button class="btn btn-wa" onclick="openCart()" style="padding:10px 16px;font-size:.84rem">Keranjang →</button></div>
+
+<!-- JSON-LD SEO — MUST for 1.5jt paket -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Restaurant","name":"Warung Salem","alternateName":"Warung Salem Purwokerto","description":"Warung makan favorit mahasiswa UMP & UHB Purwokerto — Beuteng wareg awak jagjag. Dine In, Take Away, COD kampus. Best Seller Nasi Tutug Oncom Ayam, Magelangan.","url":"https://www.warungsalem.web.id/","image":"https://www.warungsalem.web.id/assets/img/nasi-tutug-oncom-ayam.jpg","telephone":"+6282325555586","address":{"@type":"PostalAddress","streetAddress":"Jl. Tegal Mulya, Gerbang Belakang Kampus UMP, Ledug, Kembaran","addressLocality":"Purwokerto","addressRegion":"Jawa Tengah","postalCode":"53182","addressCountry":"ID"},"geo":{"@type":"GeoCoordinates","latitude":-7.415382,"longitude":109.272888},"openingHours":"Mo-Su 10:00-21:00","priceRange":"Rp 5000 - Rp 15000","servesCuisine":["Indonesian","Javanese","Sunda"],"currenciesAccepted":"IDR","paymentAccepted":"Cash, Transfer, QRIS","hasMenu":"https://www.warungsalem.web.id/#menu","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"200"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Warung Salem buka jam berapa?","acceptedAnswer":{"@type":"Answer","text":"Buka setiap hari 10.00-21.00 WIB. Order mepet jam tutup chat WA dulu."}},
+{"@type":"Question","name":"Minimal order COD berapa? Ongkir?","acceptedAnswer":{"@type":"Answer","text":"Minimal 1 porsi, free ongkir radius <1km dari kampus UMP/UHB, selebihnya 3-5rb."}},
+{"@type":"Question","name":"Pedes bisa request level?","acceptedAnswer":{"@type":"Answer","text":"Bisa dari level 0 sampai setan. Chat WA pas order kasih note pedes."}},
+{"@type":"Question","name":"Pembayaran bisa QRIS atau transfer?","acceptedAnswer":{"@type":"Answer","text":"Bisa Cash, Transfer BCA/BRI, QRIS. COD bisa QRIS di tempat."}},
+{"@type":"Question","name":"Bisa pesan banyak untuk acara?","acceptedAnswer":{"@type":"Answer","text":"Bisa, minimal 20 porsi diskon 10% + free delivery. Chat H-1."}}
+]}
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.warungsalem.web.id/"},{"@type":"ListItem","position":2,"name":"Menu Warung Salem","item":"https://www.warungsalem.web.id/#menu"}]}</script>
+
+<script>
+const MENUS=[
+{id:'nasi-tutug-oncom-ayam',name:'Nasi Tutug Oncom Ayam',desc:'Nasi tutug oncom khas Sunda dengan ayam goreng',price:14000,cat:'makanan',badge:'Best Seller',img:'assets/img/nasi-tutug-oncom-ayam.jpg'},
+{id:'magelangan',name:'Magelangan',desc:'Nasi goreng campur mie khas Magelang',price:12000,cat:'makanan',badge:'Best Seller',img:'assets/img/magelangan.jpg'},
+{id:'roti-bakar-sandwich',name:'Roti Bakar Sandwich',desc:'Roti bakar isi lengkap ala sandwich (+3K extra keju)',price:11000,cat:'snack',badge:'Best Seller',img:'assets/img/roti-bakar-sandwich.jpg'},
+{id:'mie-nyemek',name:'Mie Nyemek',desc:'Mie kuah kental bumbu Jawa nyemek',price:12000,cat:'mie',badge:'Best Seller',img:'assets/img/mie-nyemek.jpg'},
+{id:'es-milo',name:'Es Milo',desc:'Minuman coklat Milo dingin segar',price:5000,cat:'minuman',badge:'Best Seller',img:'assets/img/es-milo.jpg'},
+{id:'nasi-tutug-oncom-telur',name:'Nasi Tutug Oncom Telur',desc:'Nasi tutug oncom dengan telur goreng/dadar',price:11000,cat:'makanan',img:'assets/img/nasi-tutug-oncom-telur.jpg'},
+{id:'nasi-goreng',name:'Nasi Goreng',desc:'Nasi goreng bumbu racikan khas Warung Salem',price:11000,cat:'makanan',img:'assets/img/nasi-goreng.jpg'},
+{id:'nasi-ayam-chilli-padi',name:'Nasi Ayam Chilli Padi',desc:'Ayam goreng sambal chilli padi super pedas',price:13000,cat:'makanan',badge:'Pedas!',img:'assets/img/nasi-ayam-chilli-padi.jpg'},
+{id:'nasi-ayam-penyet-cabe-ijo',name:'Nasi Ayam Penyet Cabe Ijo',desc:'Ayam penyet sambal cabe ijo khas',price:13000,cat:'makanan',badge:'Pedas!',img:'assets/img/nasi-ayam-penyet-cabe-ijo.jpg'},
+{id:'nasi-kangkung-ayam-sambal-merah',name:'Nasi Kangkung Ayam Sambal Merah',desc:'Nasi kangkung + ayam + sambal merah nampol',price:15000,cat:'makanan',img:''},
+{id:'nasi-chicken-bbq',name:'Nasi Chicken BBQ',desc:'Ayam bakar BBQ sauce dengan nasi hangat',price:14000,cat:'makanan',img:''},
+{id:'nasi-chicken-teriyaki',name:'Nasi Chicken Teriyaki',desc:'Ayam teriyaki manis gurih ala Jepang',price:14000,cat:'makanan',img:'assets/img/nasi-chicken-teriyaki.jpg'},
+{id:'nasi-ayam-asam-manis',name:'Nasi Ayam Asam Manis',desc:'Ayam crispy saus asam manis segar',price:14000,cat:'makanan',img:''},
+{id:'nasi-ayam-suwir',name:'Nasi Ayam Suwir',desc:'Ayam suwir bumbu meresap + nasi hangat',price:11000,cat:'makanan',img:'assets/img/nasi-ayam-suwir.jpg'},
+{id:'nasi-nugget-sambal-matah',name:'Nasi Nugget Sambal Matah',desc:'Nugget crispy + sambal matah Bali segar',price:11000,cat:'makanan',img:'assets/img/nasi-nugget-sambal-matah.jpg'},
+{id:'nasi-orak-arik',name:'Nasi Orak Arik',desc:'Nasi orak-arik telur sayur sederhana',price:10000,cat:'makanan',img:''},
+{id:'nasi-omelet',name:'Nasi Omelet',desc:'Omelet telur tebal + nasi hangat',price:12000,cat:'makanan',img:''},
+{id:'nasi-bejek-kulit-krispy',name:'Nasi Bejek Kulit Krispy',desc:'Nasi hangat dengan bejekan kulit ayam super krispy',price:12000,cat:'makanan',img:'assets/img/nasi-bejek-kulit-krispy.jpg'},
+{id:'mie-dok-dok',name:'Mie Dok-Dok',desc:'Mie goreng pedas khas gerobakan',price:12000,cat:'mie',badge:'Pedas!',img:'assets/img/mie-dok-dok.jpg'},
+{id:'mie-tek-tek',name:'Mie Tek Tek',desc:'Mie goreng ala tek-tek abang gerobak',price:12000,cat:'mie',img:'assets/img/mie-tek-tek.jpg'},
+{id:'mie-rebus-telur',name:'Mie Rebus Telur',desc:'Mie rebus kuah + telur rebus',price:10000,cat:'mie',img:'assets/img/mie-rebus-telur.jpg'},
+{id:'mie-goreng-telur',name:'Mie Goreng Telur',desc:'Mie goreng klasik + telur ceplok',price:10000,cat:'mie',img:'assets/img/mie-goreng-telur.jpg'},
+{id:'mie-setan',name:'Mie Setan',desc:'Mie super pedas level setan — berani coba?',price:11000,cat:'mie',badge:'Pedas!',img:'assets/img/mie-setan.jpg'},
+{id:'lumpia-beef',name:'Lumpia Beef',desc:'Lumpia isi daging sapi crispy',price:11000,cat:'snack',img:'assets/img/lumpia-beef.jpg'},
+{id:'roti-bakar-coklat',name:'Roti Bakar Coklat',desc:'Roti bakar manis coklat crunchy (+3K extra keju)',price:11000,cat:'snack',img:'assets/img/roti-bakar-coklat.jpg'},
+{id:'roti-bakar-matcha',name:'Roti Bakar Matcha',desc:'Roti bakar manis rasa matcha (+3K extra keju)',price:11000,cat:'snack',img:'assets/img/roti-bakar-matcha.jpg'},
+{id:'roti-bakar-strawberry',name:'Roti Bakar Strawberry',desc:'Roti bakar selai strawberry (+3K extra keju)',price:11000,cat:'snack',img:'assets/img/roti-bakar-strawberry.jpg'},
+{id:'es-teh',name:'Es Teh',desc:'Teh manis dingin segar',price:4000,cat:'minuman',img:'assets/img/es-teh.jpg'},
+{id:'es-nutrisari',name:'Es Nutrisari',desc:'Es jeruk Nutrisari segar',price:5000,cat:'minuman',img:'assets/img/es-nutrisari.jpg'}
+];
+if(!MENUS.find(m=>m.id==='es-goodday')) MENUS.push({id:'es-goodday',name:'Es Good Day',desc:'Kopi Good Day dingin',price:5000,cat:'minuman',img:'assets/img/es-goodday.jpg'});
+const rupiah=n=>new Intl.NumberFormat('id-ID',{style:'currency',currency:'IDR',maximumFractionDigits:0}).format(n);
+let cart=JSON.parse(localStorage.getItem('ws-cart')||'[]');
+let currentFilter='all', currentSearch='';
+function saveCart(){localStorage.setItem('ws-cart',JSON.stringify(cart));updateCartUI();}
+function addToCart(id){
+ const m=MENUS.find(x=>x.id===id); if(!m) return;
+ const ex=cart.find(c=>c.id===id);
+ if(ex) ex.qty++; else cart.push({id:m.id,name:m.name,price:m.price,img:m.img,qty:1});
+ saveCart();
+ // feedback
+ const btn=document.querySelector(`[data-add='${id}']`);
+ if(btn){ const old=btn.innerHTML; btn.innerHTML='✓ Ditambah'; btn.style.background='var(--wa)'; setTimeout(()=>{btn.innerHTML=old; btn.style.background='';},900); }
+ openSticky();
+}
+function changeQty(id,d){
+ const it=cart.find(c=>c.id===id); if(!it) return;
+ it.qty+=d; if(it.qty<=0) cart=cart.filter(c=>c.id!==id);
+ saveCart();
+}
+function clearCart(){ if(!confirm('Kosongkan keranjang?')) return; cart=[]; saveCart(); }
+function updateCartUI(){
+ const total=cart.reduce((s,c)=>s+c.price*c.qty,0);
+ const count=cart.reduce((s,c)=>s+c.qty,0);
+ document.querySelectorAll('#cartBadge,#ctaCartCount,#cartCount').forEach(el=>{ if(el){ el.textContent=count; el.style.display=count?'flex':'none'; }});
+ document.getElementById('cartTotal').textContent=rupiah(total);
+ document.getElementById('menuCount').textContent=MENUS.length;
+ // sticky
+ const st=document.getElementById('stickyTitle'); const sub=document.getElementById('stickySub');
+ if(count){ st.textContent=`🛒 ${count} menu · ${rupiah(total)}`; sub.textContent=`Tap checkout WA · COD UMP & UHB · Free <1km`; } else { st.textContent='🍛 Laper? Tap menu + checkout WA'; sub.textContent='0 item · Rp 0 · COD UMP & UHB'; }
+ document.getElementById('cartFoot').style.display=count?'block':'none';
+ const body=document.getElementById('cartBody');
+ if(!count){ body.innerHTML=`<div class="cart-empty"><i class="fas fa-shopping-basket"></i><p>Keranjang masih kosong</p><small>Tap menu untuk tambah pesanan — langsung checkout WA!</small></div>`; return; }
+ body.innerHTML=cart.map(c=>`
+ <div class="cart-item">
+ <img src="${c.img||'assets/img/nasi-tutug-oncom-ayam.jpg'}" alt="${c.name}" loading="lazy"/>
+ <div style="flex:1;min-width:0"><h4>${c.name}</h4><small>${rupiah(c.price)} x ${c.qty} = ${rupiah(c.price*c.qty)}</small>
+ <div class="cart-qty"><button onclick="changeQty('${c.id}',-1)">−</button><span>${c.qty}</span><button onclick="changeQty('${c.id}',1)">+</button><button onclick="cart=cart.filter(x=>x.id!=='${c.id}');saveCart()" style="margin-left:8px;color:#ff6b6b">🗑️</button></div></div>
+ </div>`).join('');
+}
+function checkoutWA(){
+ if(!cart.length) return;
+ const lines=cart.map(c=>`- ${c.qty}x ${c.name} @${rupiah(c.price)} = ${rupiah(c.price*c.qty)}`).join('%0A');
+ const total=cart.reduce((s,c)=>s+c.price*c.qty,0);
+ const text=`Halo%20Warung%20Salem%20%F0%9F%94%A5%0A%0ASaya%20mau%20pesan:%0A${lines}%0A%0ATotal:%20${encodeURIComponent(rupiah(total))}%0A%0ANama:%20%0AAlamat/Kos:%20%0ACatatan%20pedas/level:%20`;
+ window.open('https://wa.me/6282325555586?text='+text,'_blank');
+}
+function renderMenus(){
+ const bestGrid=document.getElementById('bestGrid');
+ const allGrid=document.getElementById('menuGrid');
+ const best=MENUS.filter(m=>m.badge==='Best Seller');
+ bestGrid.innerHTML=best.map(cardHTML).join('');
+ let filtered=MENUS.filter(m=>{
+   const matchFilter=currentFilter==='all'||m.cat===currentFilter;
+   const matchSearch=!currentSearch||m.name.toLowerCase().includes(currentSearch)||m.desc.toLowerCase().includes(currentSearch);
+   return matchFilter&&matchSearch;
+ });
+ allGrid.innerHTML=filtered.length?filtered.map(cardHTML).join(''):'';
+ document.getElementById('menuEmpty').style.display=filtered.length?'none':'block';
+}
+function cardHTML(m){
+ const hasImg=m.img&&m.img.length>3;
+ return `<div class="menu-card" data-cat="${m.cat}" data-name="${m.name.toLowerCase()}">
+ <div class="menu-img">${hasImg?`<img src="${m.img}" alt="${m.name}" loading="lazy" width="400" height="300"/>`:`<div class="menu-img-placeholder">🍛</div>`}${m.badge?`<span class="menu-badge ${m.badge.toLowerCase().includes('pedas')?'hot':''}">${m.badge}</span>`:''}</div>
+ <div class="menu-info"><h3>${m.name}</h3><p>${m.desc}</p><div class="menu-bottom"><span class="menu-price">${rupiah(m.price)}</span><div style="display:flex;gap:6px"><button class="menu-add" data-add="${m.id}" onclick="addToCart('${m.id}')"><i class="fas fa-cart-plus"></i> Tambah</button><a href="https://wa.me/6282325555586?text=Halo%20Warung%20Salem,%20pesan%20${encodeURIComponent(m.name)}%20${rupiah(m.price)}" class="menu-order" target="_blank"><i class="fab fa-whatsapp"></i></a></div></div></div>
+ </div>`;
+}
+function openCart(){document.getElementById('cartDrawer').classList.add('open');document.body.style.overflow='hidden';}
+function closeCart(){document.getElementById('cartDrawer').classList.remove('open');document.body.style.overflow='';}
+function openSticky(){const s=document.getElementById('stickyCta'); if(cart.length) s.classList.add('show');}
+document.addEventListener('DOMContentLoaded',()=>{
+ renderMenus(); updateCartUI();
+ // filter
+ document.querySelectorAll('.filter-btn').forEach(b=>b.addEventListener('click',()=>{
+   document.querySelectorAll('.filter-btn').forEach(x=>x.classList.remove('active')); b.classList.add('active');
+   currentFilter=b.dataset.filter; renderMenus();
+ }));
+ document.getElementById('menuSearch').addEventListener('input',e=>{ currentSearch=e.target.value.toLowerCase().trim(); renderMenus(); });
+ document.getElementById('cartBtn').addEventListener('click',openCart);
+ // nav scroll
+ const navbar=document.getElementById('navbar');
+ window.addEventListener('scroll',()=>{ navbar.classList.toggle('scrolled',scrollY>50); document.getElementById('backTop').classList.toggle('visible',scrollY>500); const sticky=document.getElementById('stickyCta'); sticky.classList.toggle('show',scrollY>700 || cart.length>0); },{passive:true});
+ // FAQ
+ document.querySelectorAll('.faq').forEach(f=>f.querySelector('.faq-q').addEventListener('click',()=>{ const was=f.classList.contains('open'); document.querySelectorAll('.faq').forEach(x=>x.classList.remove('open')); if(!was) f.classList.add('open'); }));
+ // reveal
+ const io=new IntersectionObserver(es=>{es.forEach(en=>{ if(en.isIntersecting){ en.target.classList.add('show'); io.unobserve(en.target); } });},{threshold:.12});
+ document.querySelectorAll('.reveal,.service-card,.testi-card,.location-item,.menu-card').forEach(el=>{ el.classList.add('reveal'); io.observe(el); });
+ // active nav
+ const secs=document.querySelectorAll('section[id]'); const links=document.querySelectorAll('.nav-link');
+ const navIo=new IntersectionObserver(es=>{es.forEach(en=>{ if(en.isIntersecting){ const id=en.target.id; links.forEach(l=>l.classList.toggle('active',l.getAttribute('href')==='#'+id)); } });},{threshold:.25,rootMargin:'-80px 0px 0px 0px'});
+ secs.forEach(s=>navIo.observe(s));
+ // mobile nav
+ const toggle=document.getElementById('navToggle'); const menu=document.getElementById('navMenu');
+ toggle.addEventListener('click',()=>{ menu.classList.toggle('open'); toggle.classList.toggle('active'); });
+ document.querySelectorAll('.nav-link').forEach(l=>l.addEventListener('click',()=>{ menu.classList.remove('open'); toggle.classList.remove('active'); }));
+ // logo home refresh
+ document.getElementById('logoHome').addEventListener('click',e=>{ e.preventDefault(); if(scrollY<10&&!location.hash){ location.reload(); return; } if(location.hash) history.replaceState(null,'',location.pathname); window.scrollTo({top:0,behavior:'smooth'}); });
+ if('scrollRestoration' in history) history.scrollRestoration='manual';
+ window.addEventListener('load',()=>{ const isReload=performance.getEntriesByType('navigation')[0]?.type==='reload'; if(isReload){ if(location.hash) history.replaceState(null,'',location.pathname); scrollTo(0,0);} });
+});
+</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 </body>
 </html>
