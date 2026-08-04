@@ -466,9 +466,11 @@ document.addEventListener('DOMContentLoaded',()=>{
  }));
  document.getElementById('menuSearch').addEventListener('input',e=>{ currentSearch=e.target.value.toLowerCase().trim(); renderMenus(); });
  document.getElementById('cartBtn').addEventListener('click',openCart);
- // nav scroll
+ // nav scroll + back-top fix
  const navbar=document.getElementById('navbar');
- window.addEventListener('scroll',()=>{ navbar.classList.toggle('scrolled',scrollY>50); document.getElementById('backTop').classList.toggle('visible',scrollY>500); const sticky=document.getElementById('stickyCta'); sticky.classList.toggle('show',scrollY>700 || cart.length>0); },{passive:true});
+ const backTopBtn=document.getElementById('backTop');
+ window.addEventListener('scroll',()=>{ navbar.classList.toggle('scrolled',scrollY>50); if(backTopBtn) backTopBtn.classList.toggle('visible',scrollY>500); const sticky=document.getElementById('stickyCta'); sticky.classList.toggle('show',scrollY>700 || cart.length>0); },{passive:true});
+ if(backTopBtn) backTopBtn.addEventListener('click',()=>{ window.scrollTo({top:0,behavior:'smooth'}); });
  // FAQ
  document.querySelectorAll('.faq').forEach(f=>f.querySelector('.faq-q').addEventListener('click',()=>{ const was=f.classList.contains('open'); document.querySelectorAll('.faq').forEach(x=>x.classList.remove('open')); if(!was) f.classList.add('open'); }));
  // reveal
