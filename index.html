@@ -162,7 +162,7 @@ nav .wrap{display:flex;justify-content:space-between;align-items:center}
 .cart-foot{padding:16px 20px;border-top:1px solid var(--line);background:rgba(0,0,0,.3)}
 .cart-total{display:flex;justify-content:space-between;font-weight:800;margin-bottom:12px}
 .cart-wa{width:100%;padding:13px;border-radius:100px;background:var(--wa);color:#fff;border:none;font-weight:800;font-size:.92rem;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px}
-/* FOOTER + FLOAT + STICKY */
+/* FOOTER + FLOAT + STICKY — mobile Android/iPhone FIX: keranjang ketutup WA */
 .footer{background:var(--dark);border-top:1px solid var(--line);padding:40px 0 18px}
 .footer-grid{display:grid;grid-template-columns:1.2fr .8fr .8fr .8fr;gap:22px}
 .footer-brand h3{font-weight:800;margin-bottom:6px}.footer-desc{color:var(--muted);font-size:.85rem;line-height:1.6}
@@ -173,14 +173,27 @@ nav .wrap{display:flex;justify-content:space-between;align-items:center}
 .pay-badge{display:inline-flex;align-items:center;gap:6px;background:var(--card);border:1px solid var(--line);padding:6px 12px;border-radius:100px;font-size:.78rem;font-weight:600;color:var(--muted);margin:4px}
 .footer-bottom{margin-top:22px;padding-top:16px;border-top:1px solid var(--line);text-align:center;color:rgba(255,255,255,.32);font-size:.72rem}
 @media(max-width:860px){.footer-grid{grid-template-columns:1fr 1fr}.footer-brand{grid-column:span 2}}
-.wa-float{position:fixed;bottom:22px;right:18px;width:54px;height:54px;background:var(--wa);border-radius:50%;display:flex;align-items:center;justify-content:center;z-index:999;box-shadow:0 4px 20px rgba(37,211,102,.4);animation:pulse 2s infinite;transition:.25s;text-decoration:none;color:#fff;font-size:1.4rem}
+.wa-float{position:fixed;bottom:22px;left:18px;width:54px;height:54px;background:var(--wa);border-radius:50%;display:flex;align-items:center;justify-content:center;z-index:899;box-shadow:0 4px 20px rgba(37,211,102,.4);animation:pulse 2s infinite;transition:.25s;text-decoration:none;color:#fff;font-size:1.4rem}
 .wa-float:hover{transform:scale(1.1)}@keyframes pulse{0%,100%{box-shadow:0 4px 20px rgba(37,211,102,.4)}50%{box-shadow:0 4px 28px rgba(37,211,102,.65)}}
-.back-top{position:fixed;bottom:22px;right:82px;width:42px;height:42px;background:var(--card);border:1px solid var(--line);border-radius:50%;display:none;align-items:center;justify-content:center;color:var(--muted);font-size:16px;cursor:pointer;z-index:998;transition:.25s}
+.back-top{position:fixed;bottom:22px;right:18px;width:42px;height:42px;background:var(--card);border:1px solid var(--line);border-radius:50%;display:none;align-items:center;justify-content:center;color:var(--muted);font-size:16px;cursor:pointer;z-index:898;transition:.25s}
 .back-top:hover{border-color:var(--red-line);color:var(--red);background:var(--red-soft)}.back-top.visible{display:flex}
-.sticky-cta{position:fixed;bottom:0;left:0;right:0;z-index:997;background:rgba(15,15,15,.95);backdrop-filter:blur(20px);border-top:1px solid var(--red-line);padding:10px 14px;display:flex;gap:10px;align-items:center;justify-content:space-between;transform:translateY(110%);transition:.35s}
+.sticky-cta{position:fixed;bottom:0;left:0;right:0;z-index:997;background:rgba(15,15,15,.96);backdrop-filter:blur(20px);border-top:1px solid var(--red-line);padding:10px 14px 10px;display:flex;gap:10px;align-items:center;justify-content:space-between;transform:translateY(110%);transition:.35s;box-shadow:0 -8px 32px rgba(0,0,0,.6)}
 .sticky-cta.show{transform:translateY(0)} .sticky-cta .left{display:flex;align-items:center;gap:10px;min-width:0} .sticky-cta .left img{width:36px;height:36px;border-radius:8px;flex-shrink:0} .sticky-cta .left b{font-size:.84rem;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis} .sticky-cta .left small{font-size:.7rem;color:var(--muted);display:block}
 .reveal{opacity:0;transform:translateY(20px);transition:.5s}.reveal.show{opacity:1;transform:translateY(0)}
-@media(max-width:520px){.wrap{padding:0 16px}section{padding:52px 0}.hero{min-height:auto;padding:96px 0 40px}.menu-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.sticky-cta{padding-bottom:calc(10px + env(safe-area-inset-bottom))}}
+/* Mobile fix: biar gak numpuk — WA kiri, BackTop kanan, Sticky di tengah atas safe-area */
+@media(max-width:600px){
+.wa-float{bottom:88px;left:16px;width:52px;height:52px;font-size:1.3rem}
+.back-top{bottom:88px;right:16px;width:40px;height:40px;font-size:15px}
+.sticky-cta{padding:12px 14px calc(12px + env(safe-area-inset-bottom))}
+/* ketika cart drawer open, sembunyikan floats biar gak double */
+body.cart-open .wa-float, body.cart-open .back-top{opacity:0;pointer-events:none}
+}
+/* desktop reset */
+@media(min-width:601px){
+.wa-float{left:auto;right:18px;bottom:22px}
+.back-top{left:auto;right:82px;bottom:22px}
+}
+@media(max-width:520px){.wrap{padding:0 16px}section{padding:52px 0}.hero{min-height:auto;padding:96px 0 40px}.menu-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.sticky-cta{padding-bottom:calc(14px + env(safe-area-inset-bottom))}}
 </style>
 </head>
 <body>
@@ -454,8 +467,8 @@ function cardHTML(m){
  <div class="menu-info"><h3>${m.name}</h3><p>${m.desc}</p><div class="menu-bottom"><span class="menu-price">${rupiah(m.price)}</span><div style="display:flex;gap:6px"><button class="menu-add" data-add="${m.id}" onclick="addToCart('${m.id}')"><i class="fas fa-cart-plus"></i> Tambah</button><a href="https://wa.me/6282325555586?text=Halo%20Warung%20Salem,%20pesan%20${encodeURIComponent(m.name)}%20${rupiah(m.price)}" class="menu-order" target="_blank"><i class="fab fa-whatsapp"></i></a></div></div></div>
  </div>`;
 }
-function openCart(){document.getElementById('cartDrawer').classList.add('open');document.body.style.overflow='hidden';}
-function closeCart(){document.getElementById('cartDrawer').classList.remove('open');document.body.style.overflow='';}
+function openCart(){document.getElementById('cartDrawer').classList.add('open');document.body.classList.add('cart-open');document.body.style.overflow='hidden';}
+function closeCart(){document.getElementById('cartDrawer').classList.remove('open');document.body.classList.remove('cart-open');document.body.style.overflow='';}
 function openSticky(){const s=document.getElementById('stickyCta'); if(cart.length) s.classList.add('show');}
 document.addEventListener('DOMContentLoaded',()=>{
  renderMenus(); updateCartUI();
