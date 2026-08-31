@@ -1,0 +1,37 @@
+name: Sync master from main (trigger Vercel deploy)
+
+# Vercel's Git integration for this project is bound to the `master` branch
+# (leftover from a master->main default-branch rename). Pushing to `main`
+# alone does NOT trigger a Vercel build. This workflow mirrors main -> master
+# on every push to main so a single push to `main` deploys to production.
+#
+# Permanent fix is to set Production Branch = main in the Vercel dashboard
+# (Project > Settings > Git). Until then, this keeps `main` as the branch
+# the operator pushes to.
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-master
+  cancel-in-progress: false
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout full history
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Fast-forward master to main
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git push origin HEAD:master
